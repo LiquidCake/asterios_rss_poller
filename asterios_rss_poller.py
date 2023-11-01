@@ -17,7 +17,7 @@ port = DEFAULT_PORT
 rss_url = None
 
 @app.route("/<lookup_srings_csv>")
-def hello_world(lookup_srings_csv):
+def get_rss_filtered(lookup_srings_csv):
     if 'favicon.ico' in lookup_srings_csv:
         return 'n/a'
 
