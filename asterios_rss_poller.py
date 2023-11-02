@@ -37,8 +37,10 @@ def get_rss_filtered(lookup_srings_csv):
             time.sleep(RETRY_DELAY_SEC)
         
     if root == None:
-        print('error parsing RSS feed URL. Probably bad URL or server is down')
-        sys.exit(1)
+        err_msg = 'error parsing RSS feed URL. Probably bad URL or server is down'
+        print(err_msg)
+        
+        return err_msg, 500
     
     channel = root.find('channel')
 
