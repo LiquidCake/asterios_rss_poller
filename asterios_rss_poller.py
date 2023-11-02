@@ -8,7 +8,7 @@ import time
 
 app = Flask(__name__,)
 
-MAX_ATTEMPTS = 20
+MAX_ATTEMPTS = 10
 RETRY_DELAY_SEC = 5
 
 DEFAULT_PORT = 8080
@@ -33,6 +33,7 @@ def get_rss_filtered(lookup_srings_csv):
             root = ET.fromstring(res.content)
             break
         except Exception as e:
+            print('request try #{} failed'.format(attempt))
             attempt += 1
             time.sleep(RETRY_DELAY_SEC)
         
