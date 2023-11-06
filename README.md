@@ -53,3 +53,6 @@ TCP port by default is 8080, to change it - pass port as 2nd command line argume
 (упакованный в exe скрипт определяется антивирусами как malware)  
 
 TCP порт по умолчанию - 8080, если нужен другой - укажите в качестве 2го аргумента командной строки
+
+![ip](https://github.com/LiquidCake/asterios_rss_proxy/assets/9273621/21572bb7-fc55-4eb7-b8d5-b7b1eb358561)
+
