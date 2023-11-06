@@ -1,4 +1,4 @@
-# RSS proxy server for Lineage 2 Asterios 
+# RSS proxy server for Lineage 2 Asterios / RSS прокси сервер для Lineage 2 Asterios
 
 This Python script starts local HTTP server with a single endpoint that proxies requests to RSS feed of Asterios Lineage 2 server - in order to help RSS readers to get more stable responses and provide updates ASAP.  
 It performs re-tries and allows to filter for event you actually need (e.g. kills of Cabrio)
