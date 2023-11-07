@@ -73,3 +73,7 @@ TCP port by default is 8080, to change it - pass port as 2nd command line argume
 если вы запускаете python скрипт напрямую - установите зависимости (`pip install -r requirements.txt`) 
 
 TCP порт по умолчанию - 8080, если нужен другой - укажите в качестве 2го аргумента командной строки
+  
+
+------------------------------  
+*Lineage 2; Asterios; subclass; сабкласс; саб рб; не пропустить саб рб; поймать саб рб; cabrio; кабрио; тои; тои рб*
