@@ -6,6 +6,7 @@ It performs re-tries and allows to filter for event you actually need (e.g. kill
 - Launch proxy server script (see below - "How to launch script (server)") on any system your phone can access by IP address (like remote server or just a PC that is connected to the same network as your phone, if router allows access etc.)  
 - Setup RSS client on your phone (like this one https://play.google.com/store/apps/details?id=com.madsvyat.simplerssreader&hl=en&gl=US - not affiliated)  
 configure sync. time to some small value (but DONT set less than like 30-20s to avoid blocking by Asterios)  
+also, disable any battery power optimizations your phone may set for RSS client app - to ensure its operation during phone inactivity  
 - Set URL of proxy server as a source of RSS feed inside your RSS client - e.g. if your PC's ip in a home netwok is `192.168.100.15` then set RSS URL as `http://192.168.100.15:8080/cabrio,heka`  
 (/cabrio,heka - path can contain name of any event from event from RSS feed or just `http://192.168.100.15:8080/,` for unfiltered feed)  
 If you open the same URL (e.g. `http://192.168.100.15:8080/cabrio,heka`) in your phone's browser - you could check that your RSS proxy server is working and is available through network. Result should be the same as on Asterios (e.g. `https://asterios.tm/index.php?cmd=rss&serv=0&out=xml`, but with your events filter)  
@@ -44,7 +45,8 @@ TCP port by default is 8080, to change it - pass port as 2nd command line argume
 
 - Запустите скрипт прокси сервера (см. ниже - "Как запустить скрипт (сервер)") на любой системе, к которой ваш телефон может присоединиться по сети (по IP) - например удалённый сервер или просто ПК, который подключен к той же сети, что и телефон (если роутер не блокирует такие соединения)  
 - Установите RSS клиент на телефон (например такой - https://play.google.com/store/apps/details?id=com.madsvyat.simplerssreader&hl=en&gl=US)  
-сконфигурируйте время синхронизации на некоторое небольшое значение (но НЕ ставьте меньше 30-20сек, чтобы избежать блокировки Астериосом)  
+сконфигурируйте время синхронизации на некоторое небольшое значение (но НЕ ставьте меньше 30-20сек, чтобы избежать блокировки Астериосом)
+также, отключите любые настройки оптимизации расхода батареи, которые могут быть настроены в вашем телефоне для приложения RSS клиента - чтобы убедиться в его функционировании когда телефон не активен  
 - Укажите URL прокси сервера в качестве источника RSS ленты в вашем RSS клиента - напр. если IP вашего ПК в домашней сети `192.168.100.15` то укажите RSS URL как `http://192.168.100.15:8080/cabrio,heka`  
 (/cabrio,heka - путь может содержать имя любого интересующего события из RSS ленты, или `http://192.168.100.15:8080/,` для ленты без фильтров)  
 Открыв тот же самый URL (напр. `http://192.168.100.15:8080/cabrio,heka`) в браузере на телефоне - вы сможете убедиться что ваш RSS прокси сервер работает и доступен по сети. Результат должен быть такой же как на Астериосе (напр. `https://asterios.tm/index.php?cmd=rss&serv=0&out=xml`, но с вашим фильтром событий)  
